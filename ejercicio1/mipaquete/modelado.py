@@ -1,9 +1,9 @@
 #clases.py
 
-class Empleado(object):
+class Empleado():
 	
 	def __init__(self):
-		super(Empleado, self).__init__()
+
 		self.nombre = ""
 		self.apellido = ""
 		self.cedula = ""
@@ -34,10 +34,10 @@ class Empleado(object):
 		return self.comision_fija
 
 	def presentar_datos(self):
-		cadena = ("Informacion de %s %s\n\tCEDULA: %s" % (self.obtener_nombre, self.obtener_apellido, self.obtener_cedula))
+		cadena = ("Informacion de %s %s\n\tCEDULA: %s" % (self.obtener_nombre(), self.apellido, self.obtener_cedula()))
 		return cadena
 
-
+"""
 class EmpleadoFijo(Empleado):
 
 	def __init__(self, arg):
@@ -56,3 +56,5 @@ class EmpleadoFijo(Empleado):
 
 	def getDescuentoSeguro(self):
 		return self.descuento_seguro		
+
+"""
